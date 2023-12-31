@@ -1,0 +1,329 @@
+* { /* Reset the browser default padding, margin and box-sizing */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px; /* Sets the value of 1rem for this document */
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+div.section {
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: darkblue;
+    font-weight: 300;
+}
+
+p.heading {
+    font-size: 1.5rem;
+    color: darkblue;
+    border-bottom: 3px darkgray solid;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.15rem;
+    display: flex;
+    align-items: center;
+}
+
+p.heading > span {
+    margin-left: 0.5rem;
+}
+
+.icon {
+    font-size: 1.25rem;
+    margin: 0.05rem;
+}
+
+.icon-large {
+    font-size: 1.5rem;
+}
+
+#main {
+    height: 100%;
+    width: 100vw;
+    padding: 0.5rem;
+}
+
+div#live-version {
+    justify-content: center;
+    max-height: 1.25rem;
+    align-self: flex-end;
+    display: none;
+}
+
+div#live-version > i {
+    font-size: 0.75rem;
+    color: cornflowerblue;
+}
+
+div#live-version > a {
+    color: cornflowerblue;
+    text-decoration: none;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    font-size: 0.85rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header > div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.subDiv {
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    /* border: 1px solid gray; */
+}
+
+.subDiv > div {
+    display: flex;
+    height: inherit;
+}
+
+#personal-details {
+    width: 30%;
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(131, 174, 255);
+}
+
+#photo > div {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-image: url('../Deepa\ photo.jpeg');
+    background-size: 110%;
+    background-position: -10px 0;
+}
+
+#contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(75, 115, 191);
+    color: whitesmoke;
+    padding: 0.25rem 0;
+}
+
+div.contact-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+    padding: 2px;
+    max-width: fit-content;
+}
+
+div.contact-detail.phone {
+    display: none;
+}
+
+div.contact-detail > a {
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#skills-section {
+    height: 50%;
+}
+
+.skill {
+    /* background-color: beige; */
+    padding: 0.25rem;
+}
+
+.skill > .skill-name {
+    font-weight: 400;
+    display: block;
+    font-size: 1.25rem;
+}
+
+.skill:not(:first-of-type) {
+    margin-top: 1.5rem;
+}
+
+.skill > .skill-detail {
+    font-weight: 300;
+    font-size: 0.95rem;
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 2px;
+}
+
+.skill-pill {
+    font-weight: 300;
+    border: 1px solid darkblue;
+    padding: 0.25rem 0.5rem;
+    display: inline-block;
+    margin: 0.25rem 0.05rem;
+    min-width: 3rem;
+    max-width: fit-content;
+    text-align: center;
+    font-size: 0.95rem;
+    border-radius: 1.5rem;
+    transition: all 0.3s;
+}
+
+.skill-pill:hover {
+    background-color: rgb(75, 115, 191);
+    color: whitesmoke;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.skill-proficiency {
+    height: 10px;
+    background-color: gray;
+}
+
+.skill-proficiency > div {
+    height: 100%;
+    background-color: white;
+}
+
+#resume {
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+}
+
+#education {
+    flex-grow: 1;
+}
+
+#education > table {
+    width: 100%;
+}
+
+#education > table td {
+    padding: 0.35rem;
+}
+
+#education > table td > p:first-child {
+    font-weight: bold;
+}
+
+#projects {
+    flex-grow: 10;
+}
+
+.project {
+    padding: 0.5rem;
+    border-left: 2px solid darkgray;
+    margin: 1rem 0;
+}
+
+.project-metadata {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.project-name {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.project-duration {
+    color: cornflowerblue;
+}
+
+.project-detail {
+    margin-bottom: 0.5rem;
+}
+
+.project-skills {
+    margin-top: 1rem;
+}
+
+.project-skills > .skill-pill {
+    font-size: 0.85rem;
+}
+
+@media print {
+    html, body {
+        min-height: 100%;
+        height: 100%;
+    }
+
+    #main {
+        min-height: 100%;
+        height: 100%;
+    }
+
+    .subDiv {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-detail > span {
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+
+    div#live-version {
+        display: block;
+    }
+
+    div.contact-detail.phone {
+        display: block;
+    }
+}
